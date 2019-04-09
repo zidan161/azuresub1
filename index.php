@@ -29,7 +29,7 @@
     $host = "zappappdatabase.database.windows.net";
     $user = "Zidan Aqila Muhammad";
     $pass = "Zappsql12345";
-    $db = "newsql";
+    $db = "zidanwebsql";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
