@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "zidansqldatabase.database.windows.net";
+    $host = "https://zidanazurewebapp.azurewebsites.net";
     $user = "zidansql";
     $pass = "Zappsql12345";
     $db = "zidanwebsql";
