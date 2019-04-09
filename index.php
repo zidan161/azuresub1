@@ -26,10 +26,11 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "https://zidanazurewebapp.azurewebsites.net";
+    $host = "zidansqldatabase.database.windows.net";
     $user = "zidansql";
     $pass = "Zappsql12345";
     $db = "zidanwebsql";
+
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
