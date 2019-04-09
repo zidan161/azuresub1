@@ -22,8 +22,11 @@
        Name  <input type="text" name="name" id="name"/></br></br>
        Email <input type="text" name="email" id="email"/></br></br>
        Job <input type="text" name="job" id="job"/></br></br>
-       <input type="submit" name="submit" value="Submit" />
-       <input type="submit" name="load_data" value="Load Data" />
+<input type="submit" name="submit" value="Submit"> 
+<style type="text/css">
+ 	body { background-color: #EA3CA3;}
+ </style>
+</input>
  </form>
  <?php
     $host = "zidansqldatabase.database.windows.net";
@@ -53,13 +56,7 @@
             $stmt->bindValue(3, $job);
             $stmt->bindValue(4, $date);
             $stmt->execute();
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
-        }
-
-        echo "<h3>Your're registered!</h3>";
-    } else if (isset($_POST['load_data'])) {
-        try {
+            try {
             $sql_select = "SELECT * FROM Registration";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
@@ -83,6 +80,7 @@
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
+        echo "<h3>Your're registered!</h3>";
     }
  ?>
  </body>
