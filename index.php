@@ -26,9 +26,9 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "zappappdatabase.database.windows.net";
-    $user = "zappapp";
-    $pass = "zid4nmicro";
+    $host = "zidansqldatabase.database.windows.net";
+    $user = "zidansql";
+    $pass = "Zappsql12345";
     $db = "zidanwebsql";
 
     try {
