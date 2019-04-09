@@ -27,8 +27,8 @@
  </form>
  <?php
     $host = "zappappdatabase.database.windows.net";
-    $user = "Zidan Aqila Muhammad";
-    $pass = "Zappsql12345";
+    $user = "zidanazure";
+    $pass = "";
     $db = "zidanwebsql";
 
     try {
